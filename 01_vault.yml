@@ -9,4 +9,4 @@
     - name: Install IIS (Web-Server only)
       ansible.windows.win_feature:
         name: Web-Server
-        state: presen
+        state: present
