@@ -11,6 +11,6 @@
         mode: '0755'
 
     - name: Add line in file
-      lineinfile:
+      ansible.builtin.lineinfile:
         path: /root/testfile.txt
         line: Ansible was here...
