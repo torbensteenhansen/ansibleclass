@@ -49,13 +49,6 @@
           ansible.builtin.debug:
             msg: "Will always run"
 
-
-    - name: Is httpd not started
-      ansible.builtin.debug:
-        msg: httpd is not running
-      when: not httpd_status.state == "started"
-
-
     - name: Configure firewall
       ansible.posix.firewalld:
         zone: public
