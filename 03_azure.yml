@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    user: write your username here
+    user: than0312
 
   tasks:
     - name: Delete resource group
