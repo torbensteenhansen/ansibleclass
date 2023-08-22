@@ -32,3 +32,9 @@
       ansible.builtin.debug:
         msg: httpd is running
       when: httpd_status.state == "started"
+
+
+    - name: Is httpd not started
+      ansible.builtin.debug:
+        msg: httpd is not running
+      when: not httpd_status.state == "started"
