@@ -1,0 +1,11 @@
+---
+- name: Lookup
+  hosts: linuxservers
+
+  vars:
+    file_contents: "{{ lookup('file', 'file.txt') }}"
+
+  tasks:
+    - name: Debug Print File Content
+      ansible.builtin.debug:
+        msg: "{{ file_contents }}"
